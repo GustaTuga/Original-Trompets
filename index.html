@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,76 @@
     <!-- Link para o css -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <!-- Link para a CDN do Material Design Icons -->
+    <link href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Link para a CDN do Flaticon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="landing-page">
+        <div class="logo">
             <figure>
-                <img src="assets/images/icone-header.jpeg" alt="Icone-trombones" id="image-header">
+                <img src="assets/images/icone-header.png" alt="icone de trombones" id="logo">
             </figure>
-            <div class="name">
-                <h1>Original Trombones</h1>
-            </div>
+            <h2>Original Trombones</h2>
         </div>
-        <div class="navegation">
-            <a href="#features">features</a>
-        </div>
+
+        <ul class="sections">
+            <li><a href="#features" id="sections">Features</a></li>
+            <li><a href="" id="sections">How It Work</a></li>
+            <li><a href="" id="sections">Pricing</a></li>
+        </ul>
     </header>
+
+    <br><br>
+    
+    <div class="container">
+        <h2 id="text">Handcrafted, home-made masterpieces</h2>
+        <section class="contact-form">
+            <form action="." method="post" id="forms">
+
+                <label for="e-mail">
+                    <input type="email" name="contact for email" id="email"     placeholder="Enter your email address">
+                </label>
+
+                <label for="submit">
+                    <button type="submit" id="submit">Get Started</button>
+                </label>
+            </form>
+        </section>
+
+        <section class="information" id="features">
+            <div class="info" id="space">
+                <!-- Ícone de fogo estilizado em amarelo -->
+                <i class="fas fa-fire" style="color: #ff9900; font-size: 68px;"></i>
+                <div class="info-text" id="confi">
+                    <h2>Premium Materials</h2>
+                    <p style="padding-right: 0px;">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.  </p>
+                </div>
+            </div>
+            <div class="info">
+                <!-- Uso do ícone de caminhão -->
+                <i class="fas fa-truck" style="color: #ff9900; font-size: 50px;"></i>
+                <div class="info-text">
+                    <h2>Fast Shipping</h2>
+                    <p >We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div class="info">
+                <!-- Uso de icone de bateria cheia -->
+                <i class="fas fa-battery-full" style="color: #ff9900; font-size: 50px;"></i>
+                <div class="info-text">
+                    <h2>Quality Assurance</h2>
+                    <p >For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-work">
+            <div class="video-trombones">
+                <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc?si=ORbFCXfo3pv49fI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

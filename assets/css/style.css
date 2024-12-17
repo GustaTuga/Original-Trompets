@@ -1,28 +1,151 @@
 /* Link de importação da Fonte Google estilo "Roboto" */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-body {
-    font-family: "Roboto", serif;
-    background-color: #eee;
-
+/* root */
+:root {
+    --color-background-primary: #eee;
+    --color-letter: #000;
+    --color-icones: #ffe600;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+/* Configuração do corpo */
+body {
+    font-family: "Roboto", serif;
+    background-color: var(--color-background-primary);
+}
+
+/* Configuração do header */
 header {
     width: 100%;
     height: 10%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--color-background-primary);
+}
+/* Configuração da logo */
+#logo {
+    max-width: 70px;
+    mix-blend-mode: darken;
 }
 
-.landing-page {
+.logo {
     display: flex;
     align-items: center;
     font-family: cursive;
+    margin-left: 5%;
+}
+/* Configuração das seções */
+.sections {
+    display: flex;
+    gap: 50px;
+    margin-right: 5%;
+    list-style: none;
 }
 
-#image-header {
-    max-width: 100px;
-    mix-blend-mode: darken;
+#sections {
+    text-decoration: none;
+    color: var(--color-letter);
+}
+
+/* Configuração do container*/
+.container {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+/* Configuração do email de contato */
+#text {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email {
+    width: 250px;
+    height: 25px;
+    border: 1px solid var(--color-letter);
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#submit {
+    margin-top: 15%;
+    background-color: var(--color-icones);
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 900;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+#submit:hover {
+    transition: 0.5s all ease;
+    background-color: #ff9900;
+    border-radius: 10px;
+}
+
+/* Configuração da seção de informação */
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.info {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.info-text {
+    margin-left: 15px;
+    font-size: 19px;
+}
+
+.fa-fire {
+    margin-left: 5px;
+}
+#confi {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Configuração do video de apresentação */
+.how-to-work {
+    display: flex;
+    justify-content: center;
+}
+
+.video-trombones {
+    margin-top: 100px;
+}
+
+#video {
+    width: 650px;
+    height: 350px;
 }
